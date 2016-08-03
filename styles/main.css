@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato";
+}
+.main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url('../images/layout/homeBg.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+.header-wrapper{
+    display: table;
+    padding-top: 20px;
+    width: 100%;
+}
+.logo-deer {
+    display: table-cell;
+    width: 100px;
+    height: 46px;
+    cursor: pointer;
+    background: url('../images/layout/logo-deer.png') no-repeat 0 0;
+}
+.main-navigation-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+.main-navigation {
+    float: right;
+    font-family: 'LatoWeb';
+    font-size: 18px;
+    list-style: none;
+    margin-right: 40px;
+}
+.main-navigation__item {
+    float: left;
+    cursor: pointer;
+    margin-right: 34px;
+    padding-bottom: 5px;
+}
+.main-navigation__item:hover{
+    border-bottom: 1px solid white;
+}
+.main-navigation__item:last-child {
+    margin-right: 0;
+}
+.navigation__link {
+    text-decoration: none;
+    color: #ededed;
+}
+.main-navigation__item:hover > .navigation__link{
+    color: white;
+}
+.home__information {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.information {
+    position: relative;
+    font-family: 'LatoLight';
+    font-size: 21px;
+    color: rgb(159, 163, 165);
+    padding-bottom: 35px;
+}
+.home__about {
+    display: inline-block;
+    line-height: 1.5;
+}
+.feedback__button{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    width: 60px;
+    height: 60px;
+    background: url('../images/layout/feedback-button.png') no-repeat 0 0;
+    cursor: pointer;
+}
+.feedback__button:hover {
+    width: 230px;
+    background: url('../images/layout/feedback-button_active.png') no-repeat 0 0;
+}
+
+@font-face {
+    font-family: 'LatoWeb';
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Regular.woff2') format('woff2'),
+    url('../fonts/Lato-Regular.woff') format('woff'),
+    url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url('../fonts/Lato-Light.eot');
+    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Light.woff2') format('woff2'),
+    url('../fonts/Lato-Light.woff') format('woff'),
+    url('../fonts/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}h
+
+@font-face {
+    font-family: 'LatoSemibold';
+    src: url('../fonts/Lato-Semibold.eot');
+    src: url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Lato-Semibold.woff2') format('woff2'),
+    url('../fonts/Lato-Semibold.woff') format('woff'),
+    url('../fonts/Lato-Semibold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
