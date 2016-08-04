@@ -133,6 +133,17 @@ body{
     list-style: none;
     width: 300px;
 }
+.tab-nav__item {
+    margin-bottom: 10px;
+}
+.tab-link {
+    font-size: 18px;
+    color: #ebebeb;
+    text-decoration: none;
+}
+.tab-link_active {
+    color: white;
+}
 .tabs-content {
     display: table-cell;
     vertical-align: middle;
