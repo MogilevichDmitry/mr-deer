@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 body{
+    height: 100%;
     font-family: "Lato";
 }
 .main {
@@ -11,25 +15,33 @@ body{
     margin: 0 auto;
 }
 .home {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    height: 100%;
     background: url('../images/layout/homeBg.jpg') no-repeat 0 0;
     background-size: cover;
 }
-.header-wrapper{
-    display: table;
+.home__header {
     padding-top: 20px;
+}
+.services__header {
+    padding-top: 15px;
+}
+.header{
+    display: table;
     width: 100%;
 }
-.logo-deer {
+.logo-textDeer {
     display: table-cell;
     width: 100px;
     height: 46px;
     cursor: pointer;
     background: url('../images/layout/logo-deer.png') no-repeat 0 0;
+}
+.logo-iconDeer {
+    display: table-cell;
+    width: 51px;
+    height: 70px;
+    cursor: pointer;
+    background: url('../images/layout/logo-icon-deer.png') no-repeat 0 0;
 }
 .main-navigation-wrapper {
     display: table-cell;
@@ -46,10 +58,11 @@ body{
     float: left;
     cursor: pointer;
     margin-right: 34px;
-    padding-bottom: 5px;
+    padding-bottom: 17px;
 }
 .main-navigation__item:hover{
-    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    border-bottom: 2px solid white;
 }
 .main-navigation__item:last-child {
     margin-right: 0;
@@ -92,6 +105,14 @@ body{
     background: url('../images/layout/feedback-button_active.png') no-repeat 0 0;
 }
 
+.services {
+    height: 100%;
+    background: url('../images/layout/servicesBg.jpg');
+    background-size: cover;
+    color: white;
+}
+
+
 @font-face {
     font-family: 'LatoWeb';
     src: url('../fonts/Lato-Regular.eot');
@@ -112,7 +133,7 @@ body{
     url('../fonts/Lato-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
-}h
+}
 
 @font-face {
     font-family: 'LatoSemibold';
