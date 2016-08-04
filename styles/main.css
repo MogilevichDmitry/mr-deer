@@ -9,6 +9,7 @@ html {
 body{
     height: 100%;
     font-family: "Lato";
+    font-variant: small-caps;
 }
 .main {
     max-width: 1300px;
@@ -104,14 +105,39 @@ body{
     width: 230px;
     background: url('../images/layout/feedback-button_active.png') no-repeat 0 0;
 }
-
 .services {
     height: 100%;
     background: url('../images/layout/servicesBg.jpg');
     background-size: cover;
     color: white;
 }
+.services__content {
+    margin-top: 60px;
+    padding-left: 30px;
+}
+.content__title {
+    font-size: 36px;
+    font-family: "LatoWeb";
+    color: white;
+}
 
+/* tabs */
+.services__tabs {
+    display: table;
+    height: 100%;
+    margin-top: 30px;
+}
+.tabs-nav {
+    display: table-cell;
+    padding-top: 50px;
+    list-style: none;
+    width: 300px;
+}
+.tabs-content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 700px;
+}
 
 @font-face {
     font-family: 'LatoWeb';
