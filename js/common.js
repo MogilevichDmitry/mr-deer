@@ -8,10 +8,21 @@ $(document).ready(function(){
 
     var tabId = $(this).attr('href');
 
-    $('.tabs-nav a',tabs).removeClass();
-    $(this).addClass('tab-nav__item_active');
+    $('.tabs-nav a',tabs).removeClass('tab-link_active');
+    $(this).addClass('tab-link_active');
 
     $('.tabs-content > div', tabs).hide(0);
     $(tabId).show();
+  });
+
+  $(document).ready(function(){
+    $('#slider').bxSlider({
+      controls: false,
+      slideWidth: 800,
+      minSlides: 3,
+      maxSlides: 3,
+      moveSlides: 1,
+      slideMargin: 10
+    });
   });
 });

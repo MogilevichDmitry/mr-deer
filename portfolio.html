@@ -3,47 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>portfolio</title>
-    <!-- jQuery library (served from Google) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <!-- bxSlider Javascript file -->
-    <script src="js/jquery.bxslider.min.js"></script>
-    <!-- bxSlider CSS file -->
-    <link href="styles/jquery.bxslider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/portfolio.css">
-    <script>
-        $(document).ready(function () {
-            $('.bxslider').bxSlider({
-                minSlides: 4,
-                maxSlides: 4,
-                slideWidth: 170,
-                slideMargin: 10,
-                ticker: true,
-                speed: 6000
-            });
-        });
-    </script>
 </head>
 <body>
 <div class="home">
-    <div class="home__header">
-        <div class="home__header">
-            <div class="main">
-                <div class="header">
-                    <div class="logo-textDeer"></div>
-                    <div class="main-navigation-wrapper">
-                        <ul class="main-navigation">
-                            <li class="main-navigation__item">
-                                <a class="navigation__link" href="#">Портфолио</a>
-                            </li>
-                            <li class="main-navigation__item">
-                                <a class="navigation__link" href="#">Услуги</a>
-                            </li>
-                            <li class="main-navigation__item">
-                                <a class="navigation__link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
+    <div class="services__header">
+        <div class="main">
+            <div class="header">
+                <a href="/mr-deer/index.html" class="logo-iconDeer"></a>
+                <div class="main-navigation-wrapper">
+                    <ul class="main-navigation">
+                        <li class="main-navigation__item">
+                            <a class="navigation__link" href="#">Портфолио</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a class="navigation__link" href="/mr-deer/services.html">Услуги</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a class="navigation__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -51,30 +30,33 @@
     <div class="services__content">
         <div class="main">
             <div class="our_services">
-                <h1 class="content__title">Услуги</h1>
-                <div class="services__tabs" id="tabs">
-                    <ul class="tabs">
-                        <li class="tab tab_active">
-                            <a class="tab-link_active" href="web-development">Web разработка</a>
+                <h1 class="content__title">Портфолио</h1>
+                <div class="tabs" id="tabs">
+                    <ul class="tabs-nav">
+                        <li class="tab-nav__item tab-nav__item_active">
+                            <a class="tab-link tab-link_active" href="#all">Все</a>
                         </li>
-                        <li class="tab">
-                            <a href="design">Дизайн</a>
+                        <li class="tab-nav__item">
+                            <a class="tab-link" href="#all">Web-сайты</a>
+                        </li>
+                        <li class="tab-nav__item">
+                            <a class="tab-link" href="#all">Мобильные приложения</a>
+                        </li>
+                        <li class="tab-nav__item">
+                            <a class="tab-link" href="#all">Логотипы</a>
+                        </li>
+                        <li class="tab-nav__item">
+                            <a class="tab-link" href="#all">Фирменный стиль</a>
                         </li>
                     </ul>
-                    <div class="tabs-content">
-                        <ul class="bxslider">
-                            <li><img src="images/HALK.png" alt=""></li>
-                            <li><img src="images/King.png" alt=""></li>
-                            <li><img src="images/OldSkull_ver.png" alt=""></li>
-                        </ul>
-                        <!-- <div id="web-development">
-                             <h3>Описание</h3>
-                             <p>Текст описания товара </p>
-                         </div>
-                         <div id="design">
-                             <h3>Характеристики</h3>
-                             <p>Список характеристик</p>
-                         </div>-->
+                    <div class="tabs-content tabs-content-slider">
+                        <div id="all">
+                            <div id="slider">
+                                <div class="slide"><img class="slider__img" src="./images/content/King.png"></div>
+                                <div class="slide"><img class="slider__img" src="./images/content/HALK.png"></div>
+                                <div class="slide"><img class="slider__img" src="./images/content/OldSkull_ver.png"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,4 +64,7 @@
     </div>
 </div>
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/jquery.bxslider.min.js"></script>
 </html>
